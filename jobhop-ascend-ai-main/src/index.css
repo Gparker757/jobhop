@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* JobHop AI Dark Design System */
+
+@layer base {
+  :root {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    --card: 21 35 56;
+    --card-foreground: 248 250 252;
+
+    --popover: 21 35 56;
+    --popover-foreground: 248 250 252;
+
+    --primary: 20 184 166;
+    --primary-foreground: 15 23 42;
+
+    --secondary: 42 55 79;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 42 55 79;
+    --muted-foreground: 148 163 184;
+
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 42 55 79;
+    --input: 42 55 79;
+    --ring: 20 184 166;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 21 35 56;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 20 184 166;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 42 55 79;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 42 55 79;
+    --sidebar-ring: 20 184 166;
+  }
+
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+
+    --card: 21 35 56;
+    --card-foreground: 248 250 252;
+
+    --popover: 21 35 56;
+    --popover-foreground: 248 250 252;
+
+    --primary: 20 184 166;
+    --primary-foreground: 15 23 42;
+
+    --secondary: 42 55 79;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 42 55 79;
+    --muted-foreground: 148 163 184;
+
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 42 55 79;
+    --input: 42 55 79;
+    --ring: 20 184 166;
+
+    --sidebar-background: 21 35 56;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 20 184 166;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 42 55 79;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 42 55 79;
+    --sidebar-ring: 20 184 166;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .gradient-teal-orange {
+    background: linear-gradient(135deg, #14b8a6 0%, #14b8a6 100%);
+  }
+  
+  .gradient-text {
+    @apply text-jobhop-teal font-bold;
+  }
+
+  .glass-card {
+    @apply bg-slate-800/60 backdrop-blur-sm border-slate-600/40;
+  }
+
+  .dark-gradient-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+}
